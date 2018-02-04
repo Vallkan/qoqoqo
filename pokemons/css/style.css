@@ -1,0 +1,114 @@
+body, html {
+  font-size: 14px;
+  font-family: "Lato", sans-serif; }
+
+.container {
+  width: 60%; }
+
+.row {
+  width: 100%; }
+
+.top-bar {
+  background-color: #020202;
+  height: 54px;
+  border-bottom: 6px solid #FF0211; }
+
+.regmenu {
+  float: right;
+  line-height: 54px; }
+
+.signin {
+  color: white;
+  border-right: 1px solid white;
+  margin-right: 10px;
+  padding-right: 10px; }
+
+.pokeballs {
+  margin-right: 5px; }
+
+.register {
+  color: #FFD02D; }
+
+.topmenu {
+  height: 85px; }
+
+.topnav {
+  float: right;
+  line-height: 85px; }
+  .topnav li {
+    display: inline;
+    margin-left: 25px; }
+    .topnav li a {
+      color: #020202; }
+
+.logo {
+  line-height: 85px; }
+
+.greeter {
+  height: 745px;
+  background-color: #FFD02D; }
+
+.mainheader {
+  margin-top: 90px; }
+
+.maintext {
+  margin-top: 20px;
+  margin-bottom: 120px; }
+
+.mainspan {
+  color: white; }
+
+.marketbutton {
+  width: 170px;
+  height: 50px;
+  background-color: #020202;
+  color: white;
+  border: 2px solid #020202;
+  border-radius: 4px; }
+
+.faqbutton {
+  width: 170px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-left: 20px; }
+
+.feature {
+  height: 470px; }
+
+.feathead {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px; }
+
+.pokecard {
+  height: 320px;
+  width: 250px;
+  border: 2px solid #FF0211;
+  border-radius: 8px; }
+
+.circlecard {
+  width: 230px;
+  margin: auto; }
+
+.smartcontract {
+  height: 300px;
+  background-color: #FFBF1E; }
+  .smartcontract h3 {
+    text-align: center; }
+
+.how {
+  height: 300px;
+  background-color: white; }
+  .how h3 {
+    text-align: center; }
+
+.value {
+  height: 300px;
+  background-color: #FFD02D; }
+  .value h3 {
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
