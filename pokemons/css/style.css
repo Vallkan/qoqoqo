@@ -1,6 +1,11 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(90deg); } }
 body, html {
   font-size: 14px;
-  font-family: "Lato", sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 .container {
   width: 60%; }
@@ -22,12 +27,29 @@ body, html {
   border-right: 1px solid white;
   margin-right: 10px;
   padding-right: 10px; }
+  .signin:hover .pokeballs {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
 
 .pokeballs {
-  margin-right: 5px; }
+  margin-right: 5px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden; }
 
 .register {
   color: #FFD02D; }
+  .register:hover .pokeballs {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
 
 .topmenu {
   height: 85px; }
@@ -76,7 +98,7 @@ body, html {
   margin-left: 20px; }
 
 .feature {
-  height: 470px; }
+  height: 570px; }
 
 .feathead {
   text-align: center;
@@ -84,14 +106,56 @@ body, html {
   margin-bottom: 40px; }
 
 .pokecard {
-  height: 320px;
-  width: 250px;
-  border: 2px solid #FF0211;
-  border-radius: 8px; }
+  height: 447px;
+  width: 293px;
+  border: 2px solid #F8E0C3;
+  border-radius: 1px;
+  text-align: center; }
+
+.cardimg {
+  width: 288px;
+  background-image: url(../images/cardbg.png);
+  height: 268px;
+  position: relative; }
 
 .circlecard {
-  width: 230px;
-  margin: auto; }
+  display: inline-block;
+  width: 210px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.carddesc h4 {
+  color: #FF0211; }
+.carddesc p {
+  color: #B9B7A7; }
+
+.leftgr, .rightgr {
+  float: left;
+  width: 50%; }
+
+.leftgr {
+  text-align: left;
+  margin-left: 20px; }
+
+.rightgr {
+  text-align: right;
+  margin-right: 0px;
+  width: 100px; }
+
+.cardbtn {
+  width: 250px;
+  margin-top: 20px;
+  height: 42px;
+  background: linear-gradient(-45deg, #FF0211, #000000);
+  color: white;
+  border: none; }
+  .cardbtn p {
+    font-weight: 500;
+    color: white;
+    margin-top: 7px; }
 
 .smartcontract {
   height: 300px;
@@ -99,10 +163,10 @@ body, html {
   .smartcontract h3 {
     text-align: center; }
 
-.how {
-  height: 300px;
+.all {
+  height: 900px;
   background-color: white; }
-  .how h3 {
+  .all h3 {
     text-align: center; }
 
 .value {
@@ -110,5 +174,22 @@ body, html {
   background-color: #FFD02D; }
   .value h3 {
     text-align: center; }
+
+.blackmenu {
+  height: 300px;
+  background-color: #020202;
+  color: white; }
+
+.lastline {
+  height: 70px;
+  background-color: #FF0211; }
+  .lastline p {
+    line-height: 70px;
+    margin-left: 40px; }
+
+.blacklogo {
+  float: right;
+  margin-top: 100px;
+  margin-right: 40px; }
 
 /*# sourceMappingURL=style.css.map */

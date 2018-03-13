@@ -7,14 +7,51 @@
     <link href="css/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- the CSS for Smooth Div Scroll -->
+    <link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+
+    <!-- Styles for my specific scrolling content -->
+    <style type="text/css">
+        #makeMeScrollable
+        {
+            width:100%;
+            height: 830px;
+            position: relative;
+            margin:50px auto;
+        }
+
+        /* Replace the last selector for the type of element you have in
+           your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+           if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+        #makeMeScrollable div.scrollableArea img
+        {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            /* If you don't want the images in the scroller to be selectable, try the following
+               block of code. It's just a nice feature that prevent the images from
+               accidentally becoming selected/inverted when the user interacts with the scroller. */
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+
 </head>
 <body>
     <div class="wrapper">
         <div class="top-bar">
             <div class="container top">
                 <div class="regmenu">
-                    <a class="signin" href="*"><img class="pokeballs" src="img/minipokeball.png">SIGN IN</a>
-                    <a class="register" href="*"><img class="pokeballs" src="img/minipokeballyellow.png">REGISTER</a>
+                    <a class="signin" href="*"><img class="pokeballs" src="images/minipokeball.png">SIGN IN</a>
+                    <a class="register" href="*"><img class="pokeballs" src="images/minipokeballyellow.png">REGISTER</a>
                 </div>
             </div>
         </div>
@@ -29,7 +66,7 @@
                     <li><a href="*">SUPPORT</a></li>
                 </ul>
                 <div class="logo">
-                    <img src="img/Logo.png">
+                    <img src="images/Logo.png">
                 </div>
             </div>
         </div>
@@ -38,12 +75,12 @@
                 <div class="row">
                     <div class="col-md-5">
                         <h1 class="mainheader">COLLECT YOUR<br> OWN UNIQUE <span class="mainspan">CRYPTOPOKEMON</span></h1>
-                        <p class="maintext">CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.</p>
+                        <p class="maintext">CryptoPokemon is blockchain-based game that allows you to collect unique ONE-OF-A-KIND pokemons! Each pokemon is stored in blockchain, once it is created there is no way to destroy or remove it.</p>
                         <button class="marketbutton">Pokemonmarket</button>
                         <button class="faqbutton">FAQ</button>
                     </div>
                     <div class="col-md-7">
-                        <img class="pika" src="img/pika.png">
+                        <img class="pika" src="images/pika.png">
                     </div>
                 </div>
             </div>
@@ -55,55 +92,111 @@
                 <div class="col-md-3">
                     <div class="pokecard">
                         <div class="cardimg">
-                            <img class="circlecard" src="img/charmander.jpg">
+                            <img class="circlecard" src="images/charmander.jpg">
                         </div>
-                        <h5>Charmander</h5>
-                        <h4>19.1231 ETH</h4>
+                        <div class="carddesc">
+                            <h4>Charmander</h4>
+                            <h5>19.1231 ETH</h5>
+                            <p class="leftgr">Owner: Vallkan</p>
+                            <p class="rightgr">TXS: 7</p>
+                            <button class="cardbtn">
+                                <p>BUY THIS CONTRACT</p>
+                                <div class="redo">
+
+                                </div>
+                                <div class="blacko">
+
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="pokecard">
-                        <div class="cardimg">
-                            <img class="circlecard" src="img/charmander.jpg">
-                        </div>
-                        <h5>Charmander</h5>
-                        <h4>19.1231 ETH</h4>
-                    </div>
+
                 </div>
                 <div class="col-md-3">
-                    <div class="pokecard">
-                        <div class="cardimg">
-                            <img class="circlecard" src="img/charmander.jpg">
-                        </div>
-                        <h5>Charmander</h5>
-                        <h4>19.1231 ETH</h4>
-                    </div>
+
                 </div>
                 <div class="col-md-3">
-                    <div class="pokecard">
-                        <div class="cardimg">
-                            <img class="circlecard" src="img/charmander.jpg">
-                        </div>
-                        <h5>Charmander</h5>
-                        <h4>19.1231 ETH</h4>
-                    </div>
+
                 </div>
                 </div>
             </div>
         </div>
 
+
+
         <div class="smartcontract">
             <h3>Ethereum smart contracts powers up CryptoPokemon</h3>
         </div>
-        <div class="how">
-            <h3>How this game works?</h3>
+        <div class="all">
+            <h3>All of them are coming to blockchain!</h3>
+
+            <div id="makeMeScrollable">
+                <img src="images/1slid.png" alt="Dead space" id="1" />
+                <img src="images/2slid.png" alt="Dead space" id="2" />
+                <img src="images/3slid.png" alt="Dead space" id="3" />
+                <img src="images/4slid.png" alt="Dead space" id="4" />
+            </div>
         </div>
         <div class="value">
-            <h3>Value increases in 4 levels of geometrical progression</h3>
+            <div class="container">
+                <h3>Value increases in 4 levels of geometrical progression</h3>
+                <p>The price of each pokemon's contract increases with each transaction.
+                    All pokemons are in the market, its possible for everyone to buy every pokemon. And when someone buys yours, in reward get up to 3x of what you paid</p>
+                <p> 4 levels of price increase:</p>
+                <p class="lvl"> Lvl 1: 3x increase from 0.01 ETH to 0.1 ETH</p>
+                <p class="lvl"> Lvl 2: 2x increase from 0.1 ETH to 0.4 ETH</p>
+                <p class="lvl"> lvl 3: 25% increase from 0.4 ETH to 1 ETH</p>
+                <p class="lvl"> lvl 4: 15% increase from 1 ETH and up</p>
+            </div>
         </div>
-
-
-
+        <footer>
+            <div class="blackmenu">
+                <div class="blacklogo">
+                    <img src="images/logoblack.png">
+                </div>
+            </div>
+            <div class="lastline">
+                <p>Copyright © CryptoPokemons</p>
+            </div>
+        </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- jQuery UI Widget and Effects Core (custom download)
+         You can make your own at: http://jqueryui.com/download -->
+    <script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+
+    <!-- Latest version (3.0.6) of jQuery Mouse Wheel by Brandon Aaron
+         You will find it here: http://brandonaaron.net/code/mousewheel/demos -->
+    <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <!-- jQuery Kinectic (1.5) used for touch scrolling -->
+    <script src="js/jquery.kinetic.js" type="text/javascript"></script>
+
+    <!-- Smooth Div Scroll 1.3 minified-->
+    <script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+    <!-- If you want to look at the uncompressed version you find it at
+         js/jquery.smoothDivScroll-1.3.js -->
+
+    <!-- Plugin initialization -->
+    <script type="text/javascript">
+        // Initialize the plugin with no custom options
+        $(document).ready(function () {
+            // None of the options are set
+            $("div#makeMeScrollable").smoothDivScroll({
+                mousewheelScrolling: "",
+                manualContinuousScrolling: true,
+                autoScrollingMode: "onStart"
+            });
+        });
+    </script>
+
+    <!-- pcvector.net -->
+    <script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+
 </body>
 </html>
